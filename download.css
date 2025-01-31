@@ -1,0 +1,77 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 10px 20px;
+    text-align: right;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.downloads h2 {
+    margin-bottom: 20px;
+}
+
+.download-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.download-box {
+    width: calc(33.333% - 10px); /* 每行3个，减去间隔 */
+    margin-bottom: 10px;
+    margin-right: 15px;
+}
+
+.software-item {
+    background-color: #f9f9f9;
+    border: 2px dashed #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.software-icon {
+    width: 50px; /* 根据需要调整 */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.download-button {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    padding: 8px 0;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box; /* 边框计算在宽度内 */
+}
+
+.download-button:hover {
+    background-color: #0056b3;
+}
+
+/* 清除浮动 */
+.download-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* 确保最后一个下载框不右边距 */
+.download-row .download-box:last-child {
+    margin-right: 0;
+}
